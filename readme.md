@@ -6,8 +6,7 @@ Estou participando do `NLW 8 - Return` da Rocketseat, e criei este repositório 
 
 ### `Mobile preview`
 
-![mobile-1](assets/screenshots/mobile1.png)
-![mobile-2](assets/screenshots/mobile2.png)
+![mobile-1](assets/screenshots/mobile.png)
 
 ### `Desktop preview`
 
@@ -19,4 +18,4 @@ Coming soon...
 
 - [x] HTML
 - [x] CSS
-- [ ] JavaScript
+- [x] JavaScript
