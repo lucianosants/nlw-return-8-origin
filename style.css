@@ -7,12 +7,13 @@
 :root {
   font-size: 62.5%; /* convert default 1rem = 16 to --> 1rem = 10px */
   --primary-color: hsl(170, 100%, 26%);
+  --bg-header: hsl(148, 23%, 89%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
-
 }
 
 body {
+  background: var(--bg-header);
   font-family: 'DM Sans';
   font-size: 1.6rem;
   text-align: center;
@@ -63,4 +64,30 @@ button {
   width: 26.3rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+.cards {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 32.7rem;
+  height: 47rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+
+}
+
+.card h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 1.6rem;
+  color: var(--primary-color);
 }
