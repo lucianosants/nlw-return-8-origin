@@ -11,8 +11,13 @@
   --paragraph: hsl(210, 9%, 31%);
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+  --bg-light: hsl(180, 14%, 97%);
   font-size: 62.5%; /* padronizar para 1rem = 10px */
   --nav-height: 7.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -22,6 +27,7 @@ body {
 }
 
 body {
+  background-color: var(--bg-light);
   font-family: 'DM Sans';
   font-size: 1.6rem;
   text-align: center;
@@ -38,12 +44,16 @@ ul {
   list-style: none;
 }
 
-/*------------------ HEADER -----------------------*/
-header {
-  margin-top: calc(4.1rem + var(--nav-height));
+section {
+  padding-block: 10rem;
 }
 
-header::before {
+/*------------------ HOME -----------------------*/
+#home {
+  padding-top: calc(4.1rem + var(--nav-height));
+}
+
+#home::before {
   content: '';
   width: 100%;
   height: calc(108rem + var(--nav-height));
@@ -55,20 +65,20 @@ header::before {
   z-index: -1;
 }
 
-header h4 {
+#home h4 {
   font-size: 1.4rem;
   color: var(--primary-color);
   margin-bottom: 1.6rem;
 }
 
-header h1 {
+#home h1 {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
   margin-bottom: 2.4rem;
 }
 
-header p {
+#home p {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
@@ -76,7 +86,7 @@ header p {
   margin-bottom: 3.2rem;
 }
 
-header button {
+#home button {
   background: var(--primary-color);
   border: none;
   border-radius: 4rem;
@@ -95,14 +105,14 @@ header button {
   margin-left: auto;
 }
 
-header img {
+#home img {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
 }
 
-.stats {
+#home .stats {
   width: 32.7rem;
   padding-block: 4rem;
   margin-inline: auto;
@@ -115,14 +125,14 @@ header img {
   gap: 6rem;
 }
 
-.stat h3 {
+#home .stat h3 {
   font-size: 4.8rem;
   color: var(--headline);
   line-height: 130%;
   margin-bottom: 0.4rem;
 }
 
-.stat p {
+#home .stat p {
   margin: 0;
   color: var(--primary-color);
   font-size: 1.6rem;
@@ -138,6 +148,7 @@ nav {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 100;
 }
 
 nav .wrapper {
@@ -168,12 +179,16 @@ nav button {
 }
 
 /*------------------ MENU-EXPANDED -----------------------*/
+.menu {
+  transform: translateY(100%);
+}
+
 body.menu-expanded {
   overflow: hidden;
 }
 
 body.menu-expanded > :not(nav) {
-  display: none;
+  visibility: hidden;
 }
 
 .menu,
@@ -197,6 +212,8 @@ body.menu-expanded .menu {
   width: 100vw;
   height: 100vh;
   padding-top: var(--nav-height);
+  transition: transform 300ms;
+  transform: translateY(0);
 }
 
 body.menu-expanded nav {
@@ -252,4 +269,39 @@ body.menu-expanded .logo path {
 
 body.menu-expanded button path {
   stroke: white;
+}
+
+/*------------------ SERVICES -----------------------*/
+#services header h4 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1.6rem;
+}
+
+#services header h2 {
+  color: var(--headline);
+  font-size: 3rem;
+  line-height: 3.9rem;
+  margin-bottom: 6rem;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: white;
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+#services .card h3 {
+  margin-block: 1.6rem;
 }
