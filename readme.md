@@ -19,3 +19,7 @@ Coming soon...
 - [x] HTML
 - [x] CSS
 - [x] JavaScript
+
+---
+
+Para visitar o projeto DoctorCare [clique aqui!](https://lucianosants.github.io/nlw-return-8-origin/)
