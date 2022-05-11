@@ -61,17 +61,43 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
+// Swiper
+const swiper = new Swiper('.swiper', {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
+    slideShadows: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
+  mausewhell: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  loop: true,
+});
+
 ScrollReveal({
   origin: 'top',
   distance: '30px',
   duration: 700,
 
 }).reveal(`#home, 
-#home img, 
-#home .stats,
-#services,
-#services header,
-#services .card,
-#about header,
-#about .content,
+#home img, #home .stats,
+#services, #services header, #services .card,
+#about header, #about .content,
+#testimonials .col-a, #testimonials .col-b,
 #contact .col-a, #contact .content, #contact .col-b`);

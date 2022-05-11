@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctorCare</title>
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,13 +78,20 @@
           <ul>
             <li><a
               onclick="closeMenu()"
-              href="#home">Início</a></li>
+              href="#home">Início</a>
+            </li>
             <li><a 
               onclick="closeMenu()"
-              href="#services">Serviços</a></li>
+              href="#services">Serviços</a>
+            </li>
             <li><a 
               onclick="closeMenu()"
-              href="#about">Sobre</a></li>
+              href="#about">Sobre</a>
+            </li>
+            <li><a
+              onclick="closeMenu()"
+              href="#testimonials">Depoimentos</a>
+            </li>
           </ul>
 
           <a 
@@ -406,6 +418,89 @@
       </div>
     </section>
 
+    <section id="testimonials">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h4>Depoimentos</h4>
+            <h2>O que os clientes dizem sobre o DoctorCare</h2>
+          </header>
+        </div>
+
+        <div class="col-b">
+          <div class="swiper">
+            <div class="testimonials swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus quam ipsum recusandae, eos labore doloremque blanditiis. Debitis, enim rem repellendus rerum molestias quod molestiae ut dolore incidunt delectus ipsam.
+                  </p>
+                  <cite>
+                    <img src="./assets/daniel-lima.jpg" alt="Foto de Daniel Lima"> Daniel Lima
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo suscipit quam, quod nobis explicabo consequuntur!
+                  </p>
+                  <cite>
+                    <img src="./assets/edna-regina.jpg" alt="Foto de Edna Regina">Edna Regina
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos illum accusamus, aperiam maiores vel id quaerat molestias, quo similique tempore debitis saepe.
+                  </p>
+                  <cite>
+                    <img src="./assets/eliza-camargo.jpg" alt="Foto de Eliza Camargo">Eliza Camargo
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid provident aperiam eum illum eveniet delectus dolores, at qui vitae eaque a blanditiis consequuntur impedit iste?
+                  </p>
+                  <cite>
+                    <img src="./assets/wallace-freitas.jpg" alt="Foto de Wallace Freitas">Wallace Freitas
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, animi obcaecati.
+                  </p>
+                  <cite>
+                    <img src="./assets/wanessa-sousa.jpg" alt="Foto de Wanessa Sousa">Wanessa Sousa
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+  
+            <div class="swiper-pagination"></div>
+  
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="wrapper">
 
@@ -611,6 +706,7 @@
       </svg> 
     </a>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>
