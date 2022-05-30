@@ -526,6 +526,7 @@ footer .social-links {
   .wrapper {
     display: grid;
     width: min(112rem, 100%);
+    overflow: hidden;
   }
 
   section {
