@@ -62,6 +62,7 @@ function closeMenu() {
 }
 
 // Swiper
+/*
 const swiper = new Swiper('.swiper', {
   effect: "coverflow",
   grabCursor: true,
@@ -89,6 +90,7 @@ const swiper = new Swiper('.swiper', {
   },
   loop: true,
 });
+*/
 
 ScrollReveal({
   origin: 'top',
